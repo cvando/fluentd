@@ -1,5 +1,6 @@
 #!/usr/bin/dumb-init /bin/sh
 
+cp /fluentd-base.conf /fluentd/etc/fluentd.conf
 
 set -e
 
