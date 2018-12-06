@@ -13,4 +13,5 @@ if [ -z ${FLUENT_ELASTICSEARCH_PASSWORD} ] ; then
 fi
 
 fluent-gem install fluent-plugin-prometheus --version='~>1.0.0'
+fluent-gem install fluent-plugin-grep
 exec fluentd -c /fluentd/etc/${FLUENTD_CONF} -p /fluentd/plugins --gemfile /fluentd/Gemfile ${FLUENTD_OPT}
